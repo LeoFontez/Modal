@@ -103,6 +103,10 @@
             align-items: center;
             justify-content: center;
         }
+        
+        .modal-box:hover{
+            background: purple;
+        }
         .toggle {
             display:flex;
         }
