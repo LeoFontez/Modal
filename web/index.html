@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Modal</title>
+    </head>
+    <body>
+
+        <div class="modal">
+            <div class="modal-box">
+                Aqui está o seu modal
+            </div>
+        </div>
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <h1>Modal</h1>
+                </div>
+                <nav id="menu">
+                    <ul>
+                        <li>Home</li>
+                        <li>Serviços</li>
+                        <li>Projetos</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+        <section id="servicos">
+            <div class="container">
+                <div class="title">
+                    <h2>Modal</h2>
+                </div>
+
+                
+
+                <div class="servicos-btn">
+                    <button class="btn-modal">Abrir Modal</button>
+                </div>
+            </div>
+        </section>
+
+
+        <script>
+            let btnModal = document.querySelector('.btn-modal');
+            let modal = document.querySelector('.modal');
+
+
+            btnModal.addEventListener('click', e => {
+                modal.classList.add('toggle');
+            });
+
+            modal.addEventListener('click', e => {
+                modal.classList.remove('toggle');
+            });
+
+        </script>
+
+    </body>
+</html>
