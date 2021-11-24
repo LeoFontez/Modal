@@ -104,9 +104,10 @@
             justify-content: center;
         }
         
-        .modal-box:hover{
-            background: purple;
+        .btn-modal:hover{
+            background: rgba(0, 0, 0, 0.72);
         }
+       
         .toggle {
             display:flex;
         }
